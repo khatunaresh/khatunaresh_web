@@ -1,0 +1,5 @@
+1. run "npm i" in vscode terminal after opening development folder
+2. To run the site in browser write "ng serve --open" in terminal but firstly install angular
+3. make changes you want
+4. To build the Production file run "npm run build"
+5. you will find folder with name "dist" upload that on netlify or you server
