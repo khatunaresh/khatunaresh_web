@@ -1,0 +1,120 @@
+.footer-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-weight: 600!important;
+    color:#fff;
+    
+    .footer-main {
+        display: block;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        font-size: 14px;
+        .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .footer-sec{
+            .footer-links li {
+                line-height: 24px;
+            }
+            .footer-links-b2b li {
+                float: left;
+                width: 50%;
+            }
+            .footer {
+                padding: 25px 0;
+            }
+        }
+        .divider {
+            border-bottom: 1px solid #232f3e !important;
+        }
+        .copyright-sec{
+            .footer-company-name {
+                padding: 22px 0;
+            }
+        }
+    }
+    .footer-background {
+        background: #232f3e !important;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .editable-content {
+        font-size: 1rem;
+    }
+    .widgetPosition-Bottom-Right {
+        position: fixed;
+        bottom: 20px;
+        left: 17px;
+    }
+    .whatsappWidget {
+        height: 3.7em;
+        width: 3.7em;
+        border-radius: 50%;
+        z-index: 11;
+        color: #fff;
+        text-align: center;
+        display: table;
+        transition-property: top;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+
+.notification-container {
+    z-index: 2;
+    position: fixed;
+    bottom: 60px;
+    left: 0px;
+    cursor: pointer;
+    transition: all .5s;
+    transform-origin: right bottom;
+    padding-left: 0;
+    float: right;
+    padding-right: 0;
+    width: auto;
+    border-radius: 50px!important;
+    .img-holder {
+        transform: scale(.5);
+        border-radius: 50px!important;
+        padding: 0;
+        height: 100px;
+        background-color: #f90;
+        overflow: hidden;
+        min-height: 100px;
+        width: 100px;
+    }
+    .contact-holder {
+        padding: 0;
+        float: right;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 125px;
+        padding: 15px 10px;
+        width: auto;
+        height: 100%;
+        border-radius: inherit;
+        overflow: hidden;
+        font-size: larger;
+        font-family: Gilroy !important;
+        font-weight: 400 !important;
+        .contact-holder-div{
+            border-radius: 8px;
+            box-shadow: 0 0 5px 1px rgb(0 0 0 / 25%);
+        }
+        a{
+            text-decoration: none;
+         }
+    }
+}

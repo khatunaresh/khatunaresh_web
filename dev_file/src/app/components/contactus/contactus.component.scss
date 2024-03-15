@@ -1,0 +1,50 @@
+.custom-template {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    padding: 45px 30px;
+    width: 100%;
+    background-color: beige ;
+}
+.row-inner {
+    width: 75%;
+    padding: 0 20px!important;
+    margin: auto;
+}
+input{
+    height: 50px;
+}
+textarea{
+    min-height: 198px;
+    resize: none;
+}
+.btn{
+    white-space: pre-wrap;
+    max-width: 100%;
+    border-width: 1px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-md {
+    font-size: 16px;
+    padding: 12px 25px;
+    border-width: 2px;
+    background-color: #f90;
+    color: #fff;
+    border-color: #f90;
+    outline-color: transparent;
+    transition: 0.3s;
+}
+.btn-rounded{
+    border-radius: 30px!important;
+}
+.form-control::placeholder {
+  color: chocolate; /* Change placeholder color to gray */
+}
+

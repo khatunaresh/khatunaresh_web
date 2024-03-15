@@ -1,0 +1,62 @@
+<div class="form-body custom-template" #contactUsDiv>
+    <div class="form-box">
+        <div class="row-inner">
+            <div class="col-12">
+                <div class="editable-content mb-3">
+                    <h1 class="text-center" style="color:dimgray; margin-bottom: 20px;">Submit Your Query</h1>
+                </div>
+            </div>
+            <div class="col">
+                <form class="row" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="mb-4">
+                            <div>
+                                <input type="text" class="form-control" formControlName="fullname" placeholder="Full Name" maxlength="50" value="" >
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div>
+                                <input type="text" class="form-control" formControlName="mobile" placeholder="Mobile Number" minlength="10" maxlength="10" value="">
+                            </div>
+                            <div class="text-danger">
+                                <small *ngIf="contactForm.controls['mobile'].hasError('minlength')">
+                                  Password must be 10 character.
+                                </small>
+                                <small *ngIf="contactForm.controls['mobile'].hasError('maxlength')">
+                                  Password must be 10 character.
+                                </small>
+                              </div>
+                        </div>
+                        <div class="mb-4">
+                            <div>
+                                <input type="text" class="form-control" formControlName="email" placeholder="Email ID" value="">
+                            </div>
+                            <div class="text-danger">
+                                <small *ngIf="contactForm.controls['email'].hasError('pattern')">
+                                  Username is not valid.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="mb-4">
+                            <div>
+                                <textarea rows="3" class="form-control" formControlName="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <!-- <div class="mb-4" style="background-color: beige; border: 1px solid black; border-radius: 5px; padding: 10px; box-shadow: 0 0 5px red;"> -->
+                          <!-- <p style="margin: 0;"> Mobile : 7232075756</p> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-md btn-rounded">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

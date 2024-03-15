@@ -1,0 +1,71 @@
+.testimonials {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 12px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0px;
+  border-radius: 8px;
+  gap: 32px;
+  width: 95%;
+}
+
+::-webkit-scrollbar {
+height: 4px;
+width: 4px;
+border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: silver;
+}
+
+.testimonials .review {
+  flex: 0 0 33%;
+  padding: 12px;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  background-color: silver;
+}
+
+.review i{
+color: greenyellow;
+border-radius: 3px;
+border-color: black;
+}
+
+.left-arrow, .right-arrow{
+background-color: silver;
+position: absolute;
+padding: 8px 12px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.left-arrow{
+left: 0.5%;
+top: 45%;
+}
+
+.right-arrow{
+right: 0.5%;
+top: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials .review {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials .review {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonials .review {
+    flex: 0 0 100%;
+  }
+}

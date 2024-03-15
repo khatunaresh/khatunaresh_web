@@ -1,0 +1,26 @@
+<div style="background-color: red;">
+  <h1 class="text-center" style="color: beige; padding-top: 20px;">Reviews</h1>
+  <div class="left-arrow" (click)="swipeLeft()">
+    <i class="fa-solid fa-arrow-left"></i>
+  </div>
+  <div class="right-arrow" (click)="swipeRight()">
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+  <div class="d-flex align-items-center justify-content-center p-3 flex-wrap">
+    <div class="testimonials" >
+      <div class="review" *ngFor="let review of reviews">
+        <h5 style="color: black;">{{review.name}}</h5>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p>
+        <h6>{{review.title}}</h6>
+        {{review.content}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.custom-template {
+    font-size: 16px;
+    padding: 45px 30px;
+    width: 100%;
+    background-color: beige;
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}

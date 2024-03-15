@@ -1,0 +1,151 @@
+/* Styles for your home component */
+/* Main navigation bar */
+.home {
+  height: 21vh;
+  // background-image: url('../../../assets/home.jpg');
+  background-size: 100% auto; /* Adjusted background-size property */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000;
+    color: beige;
+    height: 100px;
+    padding: 0 20px;
+  }
+
+  .website-name {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+  }
+
+  .mobile-number {
+    color: yellow;
+    margin-right: 50px;
+    font-weight: bold;
+  }
+}
+
+/* Second navigation bar */
+.subnavbar {
+  transition: top 0.3s ease;
+  background-color: yellow;
+  color: yellow;
+  position: relative;
+  top: 0;
+}
+
+.subnavbar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+.subnavbar .nav-link {
+  color: dimgray;
+  padding: 5px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.subnavbar .nav-link:hover {
+  color: #fb970c !important;
+  cursor: pointer;
+}
+
+.subnavbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 251, 0);
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(156, 147, 147, 0.1);
+}
+
+.subnavbar-placeholder {
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.subnavbar.sticky+.subnavbar-placeholder {
+  height: 60px;
+}
+
+// .speech-container {
+//   position: relative;
+//   /* Ensure the container has relative positioning */
+// }
+
+
+
+.modal-content {
+  background-color: beige;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 300px; /* Adjust as needed */
+}
+
+
+.speech-container {
+  position: relative;
+  display: inline-block;
+}
+
+.speech-container .speech-bubble-container {
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust as needed */
+  right: 0;
+}
+
+.speech-container .speech-bubble {
+  background-color: beige;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 200px;
+  display: none;
+}
+
+.speech-container .speech-bubble::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #f0f0f0;
+  border-top: 0;
+  margin-top: -15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#auto_trigger {
+  position: fixed;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 9999;
+}

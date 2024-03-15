@@ -1,0 +1,159 @@
+<div class="footer-container">
+    <section class="footer-main footer-background">
+        <div class="footer-distributed footer-sec">
+            <div class="footer">
+                <div class="container-fluid row">
+                    <div class="col-sm-7 footer-options mt-3">
+                        <div>
+                            <p>
+                                <b>USEFUL LINKS</b>
+                            </p>
+                            <div class="menuLink-wrapper">
+                                <ul class="footer-links footer-links-b2b">
+                                    <!-- <li class="footer-links">PRIVACY POLICY</li> -->
+                                    <li class="footer-links">HOME</li>
+                                    <li class="footer-links">SERVICES</li>
+                                    <li class="footer-links">ABOUT US</li>
+                                    <li class="footer-links">GALLERY</li>
+                                    <li class="footer-links">VIDEOS</li>
+                                    <li class="footer-links">ABOUT US</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 mt-3">
+                        <div class="footer-icons">
+                            <p>
+                                <b>CONNECT</b>
+                            </p>
+                            <div class="social-media-wrapper">
+                                <div class="wrap-icons row d-flex flex-wrap">
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-facebook" style="font-size: 2rem;"></i>
+                                    </a>
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-instagram" style="font-size: 2rem;"></i>
+                                    </a>
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-twitter" style="font-size: 2rem;"></i>
+                                    </a>
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin" style="font-size: 2rem;"></i>
+                                    </a>
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-youtube" style="font-size: 2rem;"></i>
+                                    </a>
+                                    <a class="col"  href="http://" target="_blank" rel="noopener noreferrer">
+                                        <i class="w3-xxlarge fa-brands fa-google-plus" style="font-size: 2rem;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid mt-3">
+                    <h3 class=" d-flex justify-content-center">
+                        <b>CONTACTS</b>
+                    </h3>
+                    <div class="">
+                        <h5 class="d-flex justify-content-center"><b>DELHI OFFICES</b></h5>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-6 p-5" *ngFor="let dcontact of delhiContacts">
+                                <h4>{{dcontact.location}}</h4>
+                                <div>
+                                    <div>{{dcontact.address}}</div>
+                                    <div>Mobile: {{mobile}}</div>
+                                    <div>Email: {{email}}</div>
+                                    <div>Website: {{website}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5 class="d-flex justify-content-center"><b>GURUGRAM OFFICES</b></h5>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-6 p-5" *ngFor="let gcontact of gurugramContacts">
+                                <h4>{{gcontact.location}}</h4>
+                                <div>
+                                    <div>{{gcontact.address}}</div>
+                                    <div>Mobile: {{mobile}}</div>
+                                    <div>Email: {{email}}</div>
+                                    <div>Website: {{website}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5 class="d-flex justify-content-center"><b>NOIDA OFFICES</b></h5>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-6 p-5" *ngFor="let ncontact of noidaContacts">
+                                <h4>{{ncontact.location}}</h4>
+                                <div>
+                                    <div>{{ncontact.address}}</div>
+                                    <div>Mobile: {{mobile}}</div>
+                                    <div>Email: {{email}}</div>
+                                    <div>Website: {{website}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-distributed copyright-sec">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-md-6 footer-company-name align-item">
+                    <div class="text-color copyright-container">
+                        <div class=" editable-content">
+                            © Copyrights 2023 - 2024.Khatu Naresh Packers and Movers.All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+
+    <a href="https://api.whatsapp.com/send?phone=917232075756&amp;forceIntent=true&amp;load=loadInIOSExternalSafari" target="_blank">
+        <div class="whatsappWidget widgetPosition-Bottom-Right">
+            <img src="https://image1.jdomni.in/jdomni_email/whatsapp_popup_2011271203.png?output-format=webp" class="whatsappIcon">
+        </div>
+    </a>
+
+    <div class=" col-md-12 notification-container d-flex" style="border-radius:8px 8px 8px 8px">
+        <div class="col-md-4 img-holder d-flex align-items-center justify-content-center" (click)="togglePopUp()" style="border-radius:8px 0px 0px 8px">
+            <div class="">
+                <div class="">
+                    <img src="https://image3.jdomni.in/jdomni_email/headphones_1.png?output-format=webp" alt="" class=" img-loaded">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 contact-holder d-flex" *ngIf="popup" style="border-radius:0px 8px 8px 0px">
+            <div class="contact-holder-div d-flex flex-column p-3" style="background-color:rgb(255, 255, 255)">
+                <div class="p-1">
+                    <div class="" style="color:rgb(51, 51, 51);font-family:Oswald;line-height:1.4;border-color:rgb(51, 51, 51);border-style:none;border-width:0px;border-radius:0px;letter-spacing:0;background-color:rgba(0, 0, 0, 0)">
+                        Contact Us
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="" style="color:rgba(84, 84, 84, 1);font-family:Roboto;line-height:1.4;border-color:rgb(84, 84, 84);border-style:none;border-width:0px;border-radius:0px;letter-spacing:0;background-color:rgba(0, 0, 0, 0)">
+                        <div>
+                            <a class="phoneNo-link" href="tel:+91 11-46022544">+91 11-46022544</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="" style="color:rgb(51, 51, 51);font-family:Oswald;line-height:1.4;border-color:rgb(51, 51, 51);border-style:none;border-width:0px;border-radius:0px;letter-spacing:0;background-color:rgba(0, 0, 0, 0)">
+                        Mail Us
+                    </div>
+                </div>
+                <div class="p-1">
+                    <div class="" style="color:rgba(84, 84, 84, 1);font-family:Roboto;line-height:1.4;border-color:rgb(84, 84, 84);border-style:none;border-width:0px;border-radius:0px;letter-spacing:0;background-color:rgba(0, 0, 0, 0)">
+                        <a href="mailto:ppack2go@gmail.com">ppack2go@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

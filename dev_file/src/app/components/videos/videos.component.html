@@ -1,0 +1,24 @@
+<div class="mt-5">
+    <h1 class="text-center">Videos</h1>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 p-3 d-flex justify-content-center" *ngFor="let video of videos">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <video width="320" height="240" controls src={{video.content}} type="video/mp4"></video>
+                    <!-- <iframe class="rounded" src="https://www.youtube.com/embed/poUkC_r8eN8" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> -->
+                </div>
+            </div>
+            <!-- <div class="col-md-5 m-3 d-flex justify-content-center">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/poUkC_r8eN8" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

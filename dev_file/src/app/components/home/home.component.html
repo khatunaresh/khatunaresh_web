@@ -1,0 +1,145 @@
+<div class="home">
+  <div class="navbar">
+    <h1 class="website-name">Khatu Naresh Packers and Movers</h1>
+    <a href="tel:+917232075767" class="mobile-number">Tel: 7232075767</a>
+  </div>
+
+  <div class="subnavbar-placeholder"></div>
+  <!-- Second navigation bar -->
+  <div class="subnavbar" [class.sticky]="isSticky" id="subnavbar">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="p-3 col-md-7">
+          <ul class="d-flex justify-content-center">
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('home')">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scroll('services')">services</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('aboutUs')">about us</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('gallery')">Gallery</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('videos')">Videos</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('reviews')">Reviews</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('contactUs')">Contact Us</a>
+            </li>
+            <li class="nav-item" tabindex="0">
+              <a class="nav-link" (click)="scroll('blogs')">Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="home-image">
+    <img src="../../../assets/home.jpg" alt="">
+    <div class="overlay"></div>
+  </div> -->
+
+
+
+  <!-- <div class="center-content">
+    <h1>Best Packers and Movers in Delhi NCR</h1>
+    <h6>Guaranteed On-time and Safe Delivery</h6>
+    <div class="d-flex">
+      <div class="d-flex align-items-center p-3">
+        <img src="https://assets.nobroker.in/hs-new/public/Packers-And-Movers/happy_customer_truck.svg"
+          class="nb__1gfFt p-2" alt="packers-and-movers">
+        <p class="nb__TyAzz m-0 p-2"><b>10000+</b> happy customers served so far</p>
+      </div>
+      <div class="d-flex align-items-center p-3">
+        <div class="">
+          <span class="p-2">4.8/5</span>
+          <img src="https://assets.nobroker.in/hs-new/public/Packers-And-Movers/reviews_star.svg" class="nb__3ykNS p-2"
+            alt="review-packers-movers">
+          <span class="p-2">1280+ Reviews</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</div>
+
+
+
+<!-- <button id="auto_trigger" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" -->
+<!-- data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick="toggleSpeechBubble()">click me</button> -->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Request a Callback?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+          <div class="mb-3">
+            <label for="recipient-email" class="col-form-label">Email</label>
+            <input type="text" formControlName="email" class="form-control" id="recipient-email">
+            <div class="text-danger">
+              <small *ngIf="contactForm.controls['email'].hasError('pattern')">
+                Username is not valid.
+              </small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-number" class="col-form-label">Mobile Number</label>
+            <input type="text" formControlName="mobile" class="form-control" id="recipient-number" minlength="10"
+              maxlength="10">
+            <div class="text-danger">
+              <small *ngIf="contactForm.controls['mobile'].hasError('minlength')">
+                Password must be 10 character.
+              </small>
+              <small *ngIf="contactForm.controls['mobile'].hasError('maxlength')">
+                Password must be 10 character.
+              </small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" formControlName="message" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" (click)="onSubmit($event)" class="btn btn-warning">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="speech-container">
+  <div class="speech-bubble-container">
+    <div class="speech-bubble" id="speechBubble">This is a speech bubble.</div>
+  </div>
+  <button id="auto_trigger" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    data-bs-whatever="@mdo" (click)="toggleSpeechBubble($event)">Click here for callback</button>
+</div>
+
+
+
+<div id='blogs' app-blogs></div>
+<div app-contactus></div>
+<div id='services' app-services></div>
+<div id='aboutUs' app-aboutus></div>
+<div id='reviews' app-testimonials></div>
+<div id='contactUs' app-mapsection></div>
+<div app-footer></div>
+<!-- <div id='gallery' app-gallery></div> -->
+<!-- <div id='videos' app-videos></div> -->
