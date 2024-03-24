@@ -5,9 +5,9 @@
   font-family: 'Poppins', sans-serif;
 }
 .services{
-  background-color: red; /* Changed background color to red */
+  background-color: darkgoldenrod; /* Changed background color to red */
   h1{
-    color: #000;
+    color: darkgoldenrod;
   }
 }
 .body{
@@ -33,10 +33,10 @@ a{
   padding: 10px;
   margin: 10px;
   height: 450;
-  background: silver; /* Changed card background color to silver */
+  background: beige; /* Changed card background color to silver */
   // border: 1px solid #14d91e; /* Added border */
   border-radius: 20px; /* Added border-radius */
-  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+  box-shadow: 0 16px 16px goldenrod; /* Added box-shadow */
 }
 .card::before{
   content: '';
@@ -79,21 +79,21 @@ a{
   left: 0;
   width: 100%;
   height: 50px;
-  background: linear-gradient(transparent,silver);
+  background: linear-gradient(transparent,goldenrod);
   // box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced box shadow */
 }
 .card.active .card-body::before{
   display: none;
 }
 .card .card-body h3{
-  color: #000;
+  color: darkgoldenrod;
   font-size: 1rem;
   font-weight: 800;
   margin-bottom: 5px;
 }
 .card .card-body p{
   font-weight: 300;
-  color: #000;
+  color: goldenrod;
 }
 .card .more{
   position: relative;
@@ -103,7 +103,7 @@ a{
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
-  color: #000;
+  color: darkgoldenrod;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 14px;
@@ -111,7 +111,7 @@ a{
 }
 .card.active .more{
   // background: yellow;
-  color: black;
+  color: darkgoldenrod;
   font-weight: 600;
 }
 .card .more::before{

@@ -13,11 +13,11 @@
 ::-webkit-scrollbar {
 height: 4px;
 width: 4px;
-border: 1px solid #d5d5d5;
+border: 1px solid beige;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: silver;
+  background-color: beige;
 }
 
 .testimonials .review {
@@ -25,17 +25,15 @@ border: 1px solid #d5d5d5;
   padding: 12px;
   border-radius: 8px;
   scroll-snap-align: start;
-  background-color: silver;
+  background-color: beige;
 }
 
 .review i{
-color: greenyellow;
-border-radius: 3px;
-border-color: black;
+color:  darkgoldenrod;
 }
 
 .left-arrow, .right-arrow{
-background-color: silver;
+background-color: beige;
 position: absolute;
 padding: 8px 12px;
 border-radius: 50%;

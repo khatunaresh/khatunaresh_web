@@ -35,9 +35,9 @@ textarea{
     font-size: 16px;
     padding: 12px 25px;
     border-width: 2px;
-    background-color: #f90;
+    background-color: darkgoldenrod;
     color: #fff;
-    border-color: #f90;
+    border-color: darkgoldenrod;
     outline-color: transparent;
     transition: 0.3s;
 }
@@ -45,6 +45,6 @@ textarea{
     border-radius: 30px!important;
 }
 .form-control::placeholder {
-  color: chocolate; /* Change placeholder color to gray */
+  color: goldenrod; /* Change placeholder color to gray */
 }
 

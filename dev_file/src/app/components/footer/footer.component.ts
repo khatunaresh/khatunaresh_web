@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   popup:boolean=false;
-  mobile:any = "+91 7232075756";
+  mobile:any = "+91 9726340381";
   email:any= "ppack2go@gmail.com"
   website:any = "www.pack2gopackersmovers.com"
   togglePopUp(){
