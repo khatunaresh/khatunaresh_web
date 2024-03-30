@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   popup:boolean=false;
-  mobile:any = "+91 9726340381";
-  email:any= "ppack2go@gmail.com"
+  mobile:any = "+91 8306894260";
+  email:any= "nareshkhatu162@gmail.com"
   website:any = "www.pack2gopackersmovers.com"
   togglePopUp(){
     if(this.popup){
@@ -21,8 +21,8 @@ export class FooterComponent {
 
   delhiContacts: any = [
     {
-      location: "Shalimar Bagh",
-      address: "Shop no 102, Block BH, Ram Bagh, Shalimar Bagh, New Delhi, Delhi 110088"
+      location: "RISHIT RESIDENCY",
+      address: "Shop No-31, Rishit Residency, Near Pooja farm, Narolgam Ahmedabad"
     },
     {
       location: "Ashok Vihar",
